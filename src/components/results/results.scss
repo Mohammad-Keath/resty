@@ -1,0 +1,9 @@
+$backgroundColor: #f5f5f5;
+
+section{
+    background: darken($backgroundColor,100);
+    color: $backgroundColor;
+    display: grid;
+    place-content: center;
+    border: 10px solid darken($backgroundColor,60);
+}
