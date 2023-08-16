@@ -16,16 +16,16 @@ function Form(props) {
     return (
       <>
         <form onSubmit={handleSubmit}>
+          <select className="methods">
+            <option id="get" value='GET'>GET</option>
+            <option id="post" value='POST'>POST</option>
+            <option id="put" value='PUT'>PUT</option>
+            <option id="delete" value='DELETE'>DELETE</option>
+          </select>
           <label >
-            <span>URL: </span>
+            {/* <span>URL: </span> */}
             <input name='url' type='text' />
             <button type="submit">GO!</button>
-          </label>
-          <label className="methods">
-            <span id="get">GET</span>
-            <span id="post">POST</span>
-            <span id="put">PUT</span>
-            <span id="delete">DELETE</span>
           </label>
         </form>
       </>
