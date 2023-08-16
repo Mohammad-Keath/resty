@@ -7,8 +7,9 @@ html, body {
 }
 
 body {
-  background: $backgroundColor;
+  background: darken($backgroundColor,80);
   height: 100%;
+  color: $backgroundColor;
 
   #root {
     display: flex;
